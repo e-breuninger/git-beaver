@@ -1,0 +1,9 @@
+SETTINGS ${row}
+LOG
+LOG ###################################
+LOG Installing plugin: ${RepoName}
+LOG ###################################
+LOG
+GIT CLONE ${GitUrl}/${RepoName} ${Tag}
+PLUGIN COMPILE ${RepoName}/${SourcePath}
+PLUGIN ENABLE ${MainClass}

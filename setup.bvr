@@ -1,0 +1,23 @@
+LOG
+LOG ######################
+LOG Installing base plugin
+LOG ######################
+LOG
+GIT CLONE https://github.com/kneissler git-beaver-base main
+PLUGIN COMPILE git-beaver-base/src/main/java
+PLUGIN ENABLE org.jkube.gitbeaver.base.BasePlugin
+LOG
+LOG ##########################
+LOG Installing markdown plugin
+LOG ##########################
+LOG
+GIT CLONE https://github.com/kneissler git-beaver-markdown main
+PLUGIN COMPILE git-beaver-markdown/src/main/java
+PLUGIN ENABLE org.jkube.gitbeaver.MarkdownPlugin
+LOG
+LOG ########################
+LOG Decomposing plugin specs
+LOG ########################
+LOG
+MARKDOWN DECOMPOSE plugins.md decomposed
+FOR row IN decomposed/table-1 MATCHING row-# DO install-plugin
