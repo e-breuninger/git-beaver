@@ -21,5 +21,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Push the Docker image
+    - name: Push Docker image
       run: docker push gitbeaver/release:latest
