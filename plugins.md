@@ -3,9 +3,9 @@
 
 The table below specifies which plugins will be integrated into the docker image:
 
-| GitUrl             | RepoName                 | Tag  | SourcePath    | MainClass                          |
-|:-------------------|:-------------------------|:-----|---------------|:-----------------------------------|
-| https://github.com | git-beaver-file-resolver | main | src/main/java | org.jkube.gitbeaver.ResolverPlugin |
+| GitUrl                       | RepoName                 | Tag  | SourcePath    | MainClass                          |
+|:-----------------------------|:-------------------------|:-----|---------------|:-----------------------------------|
+| https://github.com/kneissler | git-beaver-file-resolver | main | src/main/java | org.jkube.gitbeaver.ResolverPlugin |
 
 Note: The plugins "git-beaver-base" and "git-beaver-markdown" should not be included into the table,
 because they will be loaded by default (in order to become able to parse and process this markdown file).

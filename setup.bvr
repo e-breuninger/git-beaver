@@ -15,9 +15,15 @@ GIT CLONE https://github.com/kneissler git-beaver-markdown main
 PLUGIN COMPILE git-beaver-markdown/src/main/java
 PLUGIN ENABLE org.jkube.gitbeaver.MarkdownPlugin
 LOG
-LOG ########################
-LOG Decomposing plugin specs
-LOG ########################
+LOG ##############################
+LOG Decomposing plugin specs table
+LOG ##############################
 LOG
 MARKDOWN DECOMPOSE plugins.md decomposed
 FOR row IN decomposed/table-1 MATCHING row-# DO install-plugin
+LOG
+LOG ################
+LOG Freezing plugins
+LOG ################
+LOG
+PLUGINS FREEZE
