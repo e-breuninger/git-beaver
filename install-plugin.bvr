@@ -1,5 +1,5 @@
 SETTINGS ${row}
-LOG GitURL: ${GitUrl}
+LOG
 LOG ###########################################
 LOG Installing plugin: ${RepoName}
 LOG ###########################################
