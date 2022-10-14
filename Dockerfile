@@ -3,5 +3,4 @@ RUN mkdir /workdir
 ADD setup.bvr /workdir/
 ADD plugins.md /workdir/
 ADD install-plugin.bvr /workdir/
-RUN /gitbeaver workdir=/workdir main=setup.bvr
-#&& rm -rf /workdir
+RUN /gitbeaver workdir=/workdir main=setup.bvr && rm -rf /workdir
