@@ -7,3 +7,4 @@ LOG
 GIT CLONE ${GitUrl} ${RepoName} ${Tag}
 PLUGIN COMPILE ${RepoName}/${SourcePath}
 PLUGIN ENABLE ${MainClass}
+APPEND plugins.txt ${GitUrl}/${RepoName}:${Tag} ${MainClass}
