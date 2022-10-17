@@ -29,3 +29,4 @@ LOG Freezing plugins
 LOG ################
 LOG
 PLUGINS FREEZE
+APPEND plugins.txt [FREEZE]
