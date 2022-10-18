@@ -30,3 +30,5 @@ LOG ################
 LOG
 PLUGINS FREEZE
 APPEND plugins.txt [FREEZE]
+LOG
+LOG Gitbeaver plugin setup done
