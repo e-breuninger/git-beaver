@@ -28,7 +28,8 @@ LOG ################
 LOG Freezing plugins
 LOG ################
 LOG
-PLUGINS FREEZE
-APPEND plugins.txt [FREEZE]
+WARN WARNING: Plugins freezing is currently disabled (for development speedup)
+# PLUGINS FREEZE
+# APPEND plugins.txt [FREEZE]
 LOG
 LOG Gitbeaver plugin setup done
