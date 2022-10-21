@@ -1,4 +1,5 @@
 SETTINGS ${row}
+DEBUG SLV
 LOG
 LOG ###########################################
 LOG Installing plugin: ${RepoName}
