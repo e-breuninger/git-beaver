@@ -7,7 +7,7 @@ The table below specifies which plugins will be integrated into the docker image
 |:-----------------------------|:-------------------------|:-----|---------------|:------------------------------------|
 | https://github.com/kneissler | git-beaver-file-resolver | main | src/main/java | org.jkube.gitbeaver.ResolverPlugin  |
 | https://github.com/kneissler | git-beaver-html-logger   | main | src/main/java | org.jkube.gitbeaver.HtmlLogPlugin   |
-| https://github.com/kneissler | git-beaver-webserver     | main | src/main/java | org.jkube.gitbeaver.WebServerPlugin |
+| https://github.com/kneissler | git-beaver-webserver     | main | src/main/java | org.jkube.gitbeaver.WebserverPlugin |
 
 Note: The plugins "git-beaver-base" and "git-beaver-markdown" should not be included into the table,
 because they will be loaded by default (in order to become able to parse and process this markdown file).
