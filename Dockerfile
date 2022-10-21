@@ -6,3 +6,4 @@ ADD install-plugin.bvr /workdir/
 RUN /gitbeaver workdir=/workdir main=setup.bvr && \
     cp /workdir/plugins.txt / && \
     rm -rf /workdir
+EXPOSE 8080
