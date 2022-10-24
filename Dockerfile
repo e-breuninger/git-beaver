@@ -3,7 +3,7 @@ RUN mkdir /workdir
 ADD setup.bvr /workdir/
 ADD plugins.md /workdir/
 ADD install-plugin.bvr /workdir/
-RUN /gitbeaver workdir=/workdir main=setup.bvr && \
+RUN /gitbeaver workdir=/workdir main=setup && \
     cp /workdir/plugins.txt / && \
     rm -rf /workdir
 EXPOSE 8080
