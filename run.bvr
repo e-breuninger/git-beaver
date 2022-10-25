@@ -3,5 +3,5 @@ STEP START Cloning ${runGit}/${runRepo}:${runTag}
 STEP END
 
 STEP START Ececuting beaver script ${runScript} in ${runRepo}
-   EXECUTE ${runScript} ${runRepo}
+   EXECUTE ${runRepo}/${runScript} ${runRepo}
 STEP END
