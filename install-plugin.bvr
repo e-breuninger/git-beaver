@@ -5,6 +5,7 @@ LOG Installing plugin: ${RepoName}
 LOG ###########################################
 LOG
 GIT CLONE ${GitUrl} ${RepoName} ${Tag}
+PLUGIN INSTALL ${MainClass}
 PLUGIN COMPILE ${RepoName}/${SourcePath}
 PLUGIN ENABLE ${MainClass}
 APPEND plugins.txt ${GitUrl}/${RepoName}:${Tag} ${MainClass}
