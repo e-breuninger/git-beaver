@@ -14,9 +14,6 @@ The table below specifies which plugins will be integrated into the docker image
 Note: The plugins "git-beaver-base" and "git-beaver-markdown" should not be included into the table,
 because they will be loaded by default (in order to become able to parse and process this markdown file).
 
-Note: The security plugin should come first (because it reads the master key and burns it after, so no other plugin 
-has access to it).
-
 Explanation of columns:
 
 * GitUrl: the URL prefix of the git repository (not including the repo name)
