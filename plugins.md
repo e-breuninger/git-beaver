@@ -15,7 +15,7 @@ Note: The plugins "git-beaver-base" and "git-beaver-markdown" should not be incl
 because they will be loaded by default (in order to become able to parse and process this markdown file).
 
 Note: The security plugin should come first (because it reads the master key and burns it after, so no other plugin 
-has access to it)
+has access to it).
 
 Explanation of columns:
 
