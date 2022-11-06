@@ -23,6 +23,12 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Push docker image to docker.io
       run: docker push gitbeaver/release:latest
+    - name: Login to gcr
+      run: docker login -u _json_key -p  ${{ secrets.GOOGLE_DOCKER_REPO_SA_KEY }}
+    - name: Tag docker image
+      run: docker tag gitbeaver/release:latest eu.gcr.io/breuni-infra-gitbeaver/gitbeaver-release:latest
+    - name: Push docker image to docker.io
+      run: docker push eu.gcr.io/breuni-infra-gitbeaver/gitbeaver-release:latest
     - name: Push docker image to gcr
       uses: mattes/gce-docker-push-action@v1
       with:
