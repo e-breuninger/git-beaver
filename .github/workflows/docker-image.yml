@@ -21,5 +21,11 @@ jobs:
       with:
         username: gitbeaver
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Push Docker image
+    - name: Push docker image to docker.io
       run: docker push gitbeaver/release:latest
+    - name Push docker image to gcr
+      uses: mattes/gce-docker-push-action@v1
+      with:
+        creds: ${{ secrets.GOOGLE_DOCKER_REPO_SA_KEY }}
+        src: gitbeaver/release:latest
+        dst: eu.gcr.io/breuni-infra-gitbeaver/release
