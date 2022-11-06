@@ -24,7 +24,7 @@ jobs:
     - name: Push docker image to docker.io
       run: docker push gitbeaver/release:latest
     - name: Initialize gcloud
-      uses: google-github-actions/auth
+      uses: GoogleCloudPlatform/google-github-actions/auth
       with:
         service_account_key: ${{ secrets.GOOGLE_DOCKER_REPO_SA_KEY }}
         project_id: breuni-infra-gitbeaver
