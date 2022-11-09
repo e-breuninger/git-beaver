@@ -32,6 +32,6 @@ jobs:
     - name: Configure docker
       run: gcloud auth configure-docker -q
     - name: Tag docker image
-      run: docker tag gitbeaver/release:latest eu.gcr.io/breuni-infra-gitbeaver/gitbeaver-release:latest
+      run: docker tag gitbeaver/release:latest eu.gcr.io/breuni-infra-gitbeaver/gitbeaver-release:${{ github.event.repository.updated_at }}
     - name: Push docker image to docker.io
-      run: docker push eu.gcr.io/breuni-infra-gitbeaver/gitbeaver-release:latest
+      run: docker push eu.gcr.io/breuni-infra-gitbeaver/gitbeaver-release:${{ github.event.repository.updated_at }}
