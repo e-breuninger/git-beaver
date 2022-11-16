@@ -6,4 +6,4 @@ This repositories is used to build docker releases of GitBeaver including recomm
 Plugins are frozen after the list has been processed, this prevents other beaver scripts from installing additional
 (potentially harmful) plugins.
 
-TODO? Prevent harmful plugins from reading the master key volume.
+TODO  Prevent harmful plugins from reading the master key volume.
