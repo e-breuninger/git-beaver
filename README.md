@@ -1,6 +1,6 @@
 # Repository e-breuninger/git-beaver
 
-Curated open-source release of safe GitBeaver docker image.
+Builds a curated open-source release of the GitBeaver docker image. 
 
 ## Purpose
 
