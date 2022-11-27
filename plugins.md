@@ -11,8 +11,8 @@ The table below specifies which plugins will be integrated into the docker image
 | https://github.com/g-bvr | web-server    | main | src/main/java | org.jkube.gitbeaver.WebserverPlugin |
 | https://github.com/g-bvr | gcloud        | main | src/main/java | org.jkube.gitbeaver.GcloudPlugin    |
 
-Note: The plugins "git-beaver-base" and "git-beaver-markdown" should not be included into the table,
-because they will be loaded by default (in order to become able to parse and process this markdown file).
+Note: The plugins "base" and "markdown" should are not included into the table,
+because they will be loaded manually (in order to become able to parse and process this markdown file).
 
 Explanation of columns:
 

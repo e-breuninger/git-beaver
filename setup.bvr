@@ -3,19 +3,19 @@ LOG ######################
 LOG Installing base plugin
 LOG ######################
 LOG
-GIT CLONE https://github.com/g-bvr git-beaver-base main
-PLUGIN COMPILE git-beaver-base/src/main/java
+GIT CLONE https://github.com/g-bvr base main
+PLUGIN COMPILE base/src/main/java
 PLUGIN ENABLE org.jkube.gitbeaver.base.BasePlugin
-APPEND plugins.txt https://github.com/g-bvr/git-beaver-base:main org.jkube.gitbeaver.base.BasePlugin
+APPEND plugins.txt https://github.com/g-bvr/base:main org.jkube.gitbeaver.base.BasePlugin
 LOG
 LOG ##########################
 LOG Installing markdown plugin
 LOG ##########################
 LOG
 GIT CLONE https://github.com/g-bvr git-beaver-markdown main
-PLUGIN COMPILE git-beaver-markdown/src/main/java
+PLUGIN COMPILE markdown/src/main/java
 PLUGIN ENABLE org.jkube.gitbeaver.MarkdownPlugin
-APPEND plugins.txt https://github.com/g-bvr/git-beaver-markdown:main org.jkube.gitbeaver.MarkdownPlugin
+APPEND plugins.txt https://github.com/g-bvr/markdown:main org.jkube.gitbeaver.MarkdownPlugin
 LOG
 LOG ##############################
 LOG Decomposing plugin specs table
