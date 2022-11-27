@@ -12,7 +12,7 @@ LOG ##########################
 LOG Installing markdown plugin
 LOG ##########################
 LOG
-GIT CLONE https://github.com/g-bvr git-beaver-markdown main
+GIT CLONE https://github.com/g-bvr markdown main
 PLUGIN COMPILE markdown/src/main/java
 PLUGIN ENABLE org.jkube.gitbeaver.MarkdownPlugin
 APPEND plugins.txt https://github.com/g-bvr/markdown:main org.jkube.gitbeaver.MarkdownPlugin
