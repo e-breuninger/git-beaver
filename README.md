@@ -10,6 +10,14 @@ Plugins are frozen after the list has been processed, this prevents other beaver
 
 TODO  Prevent harmful plugins from reading the master key volume.
 
-## Docker Image
+## Links
 
-The created docker image will be pushed to https://hub.docker.com/repository/docker/gitbeaver/release
+### Git Repositories
+* GitBeaver core: https://github.com/g-bvr/core
+* GitBeaverPlugins: https://github.com/g-bvr/
+* This repository URL: https://github.com/e-breuninger/git-beaver/
+* Derived Project (specific to google cloud platform): https://github.com/e-breuninger/git-beaver-gcp/
+
+### Docker Images
+* Used base docker image: https://hub.docker.com/r/gitbeaver/core
+* Created docker image: https://hub.docker.com/r/gitbeaver/release
