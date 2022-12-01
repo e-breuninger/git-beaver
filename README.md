@@ -19,5 +19,5 @@ TODO  Prevent harmful plugins from reading the master key volume.
 * Derived Project (specific to google cloud platform): https://github.com/e-breuninger/git-beaver-gcp/
 
 ### Docker Images
-* Used base docker image: https://hub.docker.com/r/gitbeaver/core
-* Created docker image: https://hub.docker.com/r/gitbeaver/release
+* Used base docker image: https://hub.docker.com/r/gitbeaver/core/tags
+* Created docker image: https://hub.docker.com/r/gitbeaver/release/tags
