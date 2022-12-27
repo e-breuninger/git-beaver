@@ -1,6 +1,6 @@
 # Repository e-breuninger/git-beaver
 
-Builds a curated open-source release of the GitBeaver docker image. 
+Builds a curated open-source release of the GitBeaver utility as docker image. 
 
 ## Purpose
 
@@ -8,7 +8,17 @@ This repositories is used to build docker releases of GitBeaver including recomm
 Plugins are frozen after the list has been processed, this prevents other beaver scripts from installing additional
 (potentially harmful) plugins.
 
-TODO  Prevent harmful plugins from reading the master key volume.
+## About GitBeaver
+
+## Build Overview
+
+![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/plantuml/plantuml-server/master/src/main/webapp/resource/test2diagrams.txt)
+
+```plantuml
+@startuml
+testdot 
+@enduml
+```
 
 ## Links
 
