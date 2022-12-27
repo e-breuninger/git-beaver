@@ -14,12 +14,6 @@ Plugins are frozen after the list has been processed, this prevents other beaver
 
 ![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/overview.puml)
 
-```plantuml
-@startuml
-testdot 
-@enduml
-```
-
 ## Links
 
 ### Git Repositories
