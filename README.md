@@ -12,7 +12,7 @@ Plugins are frozen after the list has been processed, this prevents other beaver
 
 ## Build Overview
 
-![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/plantuml/plantuml-server/master/src/main/webapp/resource/test2diagrams.txt)
+![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/overview.puml)
 
 ```plantuml
 @startuml
