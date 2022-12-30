@@ -1,3 +1,0 @@
-@startuml
-(DiagramA) --> (DiagramB)
-@enduml
