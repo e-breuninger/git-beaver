@@ -21,7 +21,7 @@ LOG ##############################
 LOG Decomposing plugin specs table
 LOG ##############################
 LOG
-DECOMPOSE MARKDOWN plugins.md TO decomposed
+DECOMPOSE MARKDOWN plugins.md INTO decomposed
 FOR row IN decomposed/table-1 MATCHING row-# DO install-plugin
 LOG
 LOG ################
