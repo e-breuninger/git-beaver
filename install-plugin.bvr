@@ -1,4 +1,4 @@
-SETTINGS ${row}
+READ VARIABLES FROM ${row}
 LOG
 LOG ###########################################
 LOG Installing plugin: ${RepoName}
