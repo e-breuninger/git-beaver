@@ -8,11 +8,16 @@ This repositories is used to build docker releases of GitBeaver including recomm
 Plugins are frozen after the list has been processed, this prevents other beaver scripts from installing additional
 (potentially harmful) plugins.
 
-## About GitBeaver
+# Context
 
-## Build Overview
+The following chart shows relations between the various git repositories (rectangles) and docker image (ellipses) that are
+used to create and operate the central git-beaver cloud run service (hexagon). 
 
-![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/overview.puml)
+![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver-gcp/main/overview.puml)
+
+# TODO
+
+Autocreation of documentation of commands 
 
 ## Links
 
