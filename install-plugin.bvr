@@ -8,4 +8,4 @@ GIT CLONE ${GitUrl} ${RepoName} ${Tag}
 PLUGIN COMPILE ${RepoName}/${SourcePath}
 PLUGIN ENABLE ${MainClass}
 PLUGIN INSTALL ${MainClass}
-APPEND plugins.txt ${GitUrl}/${RepoName}:${Tag} ${MainClass}
+APPEND ${GitUrl}/${RepoName}:${Tag} ${MainClass} TO plugins.txt
