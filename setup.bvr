@@ -22,7 +22,7 @@ LOG Decomposing plugin specs table
 LOG ##############################
 LOG
 DECOMPOSE MARKDOWN plugins.md INTO decomposed
-FOR row IN decomposed/table-1 MATCHING row-# DO install-plugin
+FOR FILE row IN decomposed/table-1 MATCHING row-# DO install-plugin
 LOG
 LOG ################
 LOG Freezing plugins
