@@ -1,4 +1,4 @@
-STEP START Cloning ${runGit}/${runRepo}:${runTag}
+STEP START Test Cloning ${runGit}/${runRepo}:${runTag}
 GIT CLONE ${runGit} ${runRepo} ${runTag}
 STEP END
 
