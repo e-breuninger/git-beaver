@@ -1,5 +1,5 @@
-STEP START Test Cloning ${runGit}/${runRepo}:${runTag}
-GIT CLONE ${runGit} ${runRepo} ${runTag}
+STEP START Cloning ${runGit}/${runRepo}:${runTag}
+   GIT CLONE ${runGit} ${runRepo} ${runTag}
 STEP END
 
 STEP START Ececuting beaver script ${runScript} in ${runRepo}
