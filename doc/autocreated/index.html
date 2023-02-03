@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #FAFFFA;
+}
+#myheader {
+  font-size: 60px;
+  font-weight: 600;
+  color: #3d3d3e;
+  text-shadow: 0px 0px 5px #DDDDDD, 0px 0px 10px #DDDDDD, 0px 0px 10px #EEEEEE,
+    0px 0px 20px #EEEEEE;
+}
+#mytable1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#mytable1 td, #mytable1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#mytable1 tr:nth-child(even){background-color: #f2f2e2;}
+#mytable1 tr:nth-child(odd){background-color: #e2f2f2;}
+#mytable1 tr:hover {background-color: #ddd;}
+#mytable1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#mytable2 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#mytable2 td, #mytable2 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#mytable2 tr:nth-child(even){background-color: #f2f2e2;}
+#mytable2 tr:nth-child(odd){background-color: #e2f2f2;}
+#mytable2 tr:hover {background-color: #ddd;}
+#mytable2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #A43A6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myheader">gitbeaver/release</h1>
+<h2>Plugins</h2>
+<table id="mytable1">
+<tr><th>Plugin</th><th>Purpose</th></tr>
+  <tr><td><a href="CorePlugin.html">CorePlugin</a></td><td>    Collects the most elementary commands (logging, simple git cloning and plugin management).
+</td></tr>
+  <tr><td><a href="BasePlugin.html">BasePlugin</a></td><td>Collects various elementary commands (file handling, flow control, sub script execution, loops, etc.)
+</td></tr>
+  <tr><td><a href="MarkdownPlugin.html">MarkdownPlugin</a></td><td>Parses and deconstructs markdown files</td></tr>
+  <tr><td><a href="SecurityPlugin.html">SecurityPlugin</a></td><td>    encryption and decryption of secret information using an asymmetric (aka. public/private) master key pair
+</td></tr>
+  <tr><td><a href="ResolverPlugin.html">ResolverPlugin</a></td><td>Resolves text files by substituting variables, expanding macros and evaluate conditional sections</td></tr>
+  <tr><td><a href="HtmlLogPlugin.html">HtmlLogPlugin</a></td><td>Allows collection of logs and providing collected logs as hierarchically organised html file
+</td></tr>
+  <tr><td><a href="WebserverPlugin.html">WebserverPlugin</a></td><td>operates a web server to handle http requests and trigger serialized script execution
+</td></tr>
+  <tr><td><a href="YamlPlugin.html">YamlPlugin</a></td><td>Parses and deconstructs yaml files</td></tr>
+  <tr><td><a href="TerraformPlugin.html">TerraformPlugin</a></td><td>allows issuing of terraform commands</td></tr>
+  <tr><td><a href="GcloudPlugin.html">GcloudPlugin</a></td><td>Allows execution of GCP operations using the Googlw gcloud cli</td></tr>
+</table>
+
+<h2>Commands</h2>
+
+<table id="mytable2">
+<tr><th>Command</th><th>Purpose</th></tr>
+  <tr><td><a href="AppendCommand.html">AppendCommand</a></td><td>Append a text to a file</td></tr>
+  <tr><td><a href="AssembleCommand.html">AssembleCommand</a></td><td>Append the contant of a file to another file</td></tr>
+  <tr><td><a href="CleanupCommand.html">CleanupCommand</a></td><td>Cleanup a folder (remove all files and sub-folders, the folder itself is kept))</td></tr>
+  <tr><td><a href="CopyCommand.html">CopyCommand</a></td><td>Copy a file or directory to another place. It is not allowed that source is a file and target
+is an (already existing) directory. If target is an existing directory and the source is a
+file, this file will be copied into a new file in tha tsrget directory with same filename.
+If source is a directory and target is an already existing drectory, the contents of source are copied
+to the target. If the target directory does not exist, yet, it will be created (including ancestors
+if needed).
+</td></tr>
+  <tr><td><a href="CreateKeyPairCommand.html">CreateKeyPairCommand</a></td><td>create a new public/private key pair and execute a command</td></tr>
+  <tr><td><a href="DebugCommand.html">DebugCommand</a></td><td>Print information for the purpose of debugging</td></tr>
+  <tr><td><a href="DokumentationCommand.html">DokumentationCommand</a></td><td>Create a set of html file for documentation.</td></tr>
+  <tr><td><a href="EncryptCommand.html">EncryptCommand</a></td><td>encrypt a secret value</td></tr>
+  <tr><td><a href="ErrorCommand.html">ErrorCommand</a></td><td>Log a text as error</td></tr>
+  <tr><td><a href="ExecuteCommand.html">ExecuteCommand</a></td><td>Execute a beaver script</td></tr>
+  <tr><td><a href="ForCommand.html">ForCommand</a></td><td>Execute a command for multiple items</td></tr>
+  <tr><td><a href="GcloudCommand.html">GcloudCommand</a></td><td>execute gcloud command</td></tr>
+  <tr><td><a href="GitCloneCommand.html">GitCloneCommand</a></td><td>    Simple git cloning command.
+</td></tr>
+  <tr><td><a href="GitPullOrCloneCommand.html">GitPullOrCloneCommand</a></td><td>Pull a changes of a git repository in the current workspace, if it was not cloned yet, clone it from specified remote location</td></tr>
+  <tr><td><a href="GitSimulateCloneCommand.html">GitSimulateCloneCommand</a></td><td>specifies a folder in current workspace from which git operations are simulated</td></tr>
+  <tr><td><a href="IfCommand.html">IfCommand</a></td><td>Branching statements, depending on a boolean condition</td></tr>
+  <tr><td><a href="LogCommand.html">LogCommand</a></td><td>Log a text</td></tr>
+  <tr><td><a href="MarkdownDecomposeCommand.html">MarkdownDecomposeCommand</a></td><td>Decompose a markdown file into a folder tree</td></tr>
+  <tr><td><a href="MasterKeyPresentCommand.html">MasterKeyPresentCommand</a></td><td>Cchek if masterkey is available</td></tr>
+  <tr><td><a href="PluginCompileCommand.html">PluginCompileCommand</a></td><td>   This command compiles the source files of a plugin. The java sources are supposed to reside in a
+   directory within the workspace. The compiled class files are written to the class path.
+</td></tr>
+  <tr><td><a href="PluginEnableCommand.html">PluginEnableCommand</a></td><td>   This command enables a plugin. The class files must be present in the class path (e.g. as
+   result of a PLUGIN COMPILE command executed before this).
+</td></tr>
+  <tr><td><a href="PluginInstallCommand.html">PluginInstallCommand</a></td><td>   This command executes system level installation steps required by a plugin.
+   If there are any installation steps to be executed on system level is defined
+   by the method Plugin.getCommands(). These steps are supposed to be executed
+   in a shell script while setting up a docker container.
+</td></tr>
+  <tr><td><a href="PluginsFreezeCommand.html">PluginsFreezeCommand</a></td><td>   This command freezes the plugin state. This means that subsequent calls of PLUGIN ENABLE, PLUGIN INSTALL
+   or PLUGIN COMPILE are prohibited. This is considered a security feature and should be used in
+   the core docker file setup before any custom beaver scripts are executed.
+</td></tr>
+  <tr><td><a href="ReadVariablesCommand.html">ReadVariablesCommand</a></td><td>Read multiple variable from a file</td></tr>
+  <tr><td><a href="ResolveCommand.html">ResolveCommand</a></td><td>resolve a file (using the rich file resolver)</td></tr>
+  <tr><td><a href="ReturnCommand.html">ReturnCommand</a></td><td>Return a value from an executed script back to the calling script. The returned value is accesible in the calling script via the variable RETURN_VALUE</td></tr>
+  <tr><td><a href="SetCommand.html">SetCommand</a></td><td>Set a variable to a value</td></tr>
+  <tr><td><a href="StepEndCommand.html">StepEndCommand</a></td><td>Marks the end of a step block (for structured logging)</td></tr>
+  <tr><td><a href="StepStartCommand.html">StepStartCommand</a></td><td>Marks the start of a step block (for structured logging)</td></tr>
+  <tr><td><a href="StepStateCommand.html">StepStateCommand</a></td><td>Set the state of the current step</td></tr>
+  <tr><td><a href="TerraformCommand.html">TerraformCommand</a></td><td>Execute terraform command</td></tr>
+  <tr><td><a href="WarnCommand.html">WarnCommand</a></td><td>Log a text as warning</td></tr>
+  <tr><td><a href="WebserverEndPointCommand.html">WebserverEndPointCommand</a></td><td>Define an endpoint (endpoints are executed concurrently, the request returns after processing is done, endpoints can have url parameters that are passed as variables to the script)</td></tr>
+  <tr><td><a href="WebserverInitCommand.html">WebserverInitCommand</a></td><td>Start web server, listening to specified port</td></tr>
+  <tr><td><a href="WebserverShutdownCommand.html">WebserverShutdownCommand</a></td><td>Shutdown webserver (no requests/triggers are accepted any longer, server shuts down after all scheduled trigger runs have terminated)</td></tr>
+  <tr><td><a href="WebserverTriggerCommand.html">WebserverTriggerCommand</a></td><td>Define a trigger (triggers are queued and executed sequentially, the request returns directly after the trigger script has been queued, triggers cannot have url parameters)</td></tr>
+  <tr><td><a href="WithCredentialsGitCloneCommand.html">WithCredentialsGitCloneCommand</a></td><td>clone a git repository using encrypted credentials</td></tr>
+  <tr><td><a href="WithSecretCommand.html">WithSecretCommand</a></td><td>Execute a command using a secret</td></tr>
+  <tr><td><a href="WriteHtmlLogsCommand.html">WriteHtmlLogsCommand</a></td><td>Store logs into a html file</td></tr>
+  <tr><td><a href="YamlDecomposeCommand.html">YamlDecomposeCommand</a></td><td>Decompose a yaml file into a folder tree</td></tr>
+</table>
+</body>
+</html>
+
