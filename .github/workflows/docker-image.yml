@@ -14,6 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Show Java Version
+      run: java -version
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag gitbeaver/release:latest
     - name: Login to Docker Hub
