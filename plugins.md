@@ -12,6 +12,7 @@ The table below specifies which plugins will be integrated into the docker image
 | https://github.com/g-bvr | yaml          | main | src/main/java | org.jkube.gitbeaver.YamlPlugin      |
 | https://github.com/g-bvr | terraform     | main | src/main/java | org.jkube.gitbeaver.TerraformPlugin |
 | https://github.com/g-bvr | gcloud        | main | src/main/java | org.jkube.gitbeaver.GcloudPlugin    |
+| https://github.com/g-bvr | pubsub        | main | src/main/java | org.jkube.gitbeaver.PubSubPlugin    |
 
 Note: The plugins "base" and "markdown" should are not included into the table,
 because they will be loaded manually (in order to become able to parse and process this markdown file).
