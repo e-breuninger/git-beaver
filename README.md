@@ -20,6 +20,7 @@ used to create and operate the central git-beaver cloud run service (hexagon).
 
 All integrated plugins and available commands are listed in [this automatically created documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/e-breuninger/git-beaver/main/doc/autocreated/index.html).
 
+
 ## Links
 
 ### Git Repositories
