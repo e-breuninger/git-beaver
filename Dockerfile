@@ -6,5 +6,5 @@ RUN /gitbeaver workdir=/workdir main=setup && \
     rm -rf /workdir
 COPY run.bvr /workdir/
 #TODO this can go, just for develop
-ENV GOOGLE_APPLICATION_CREDENTIALS /secret/terraform-service-account.json
+ENV GOOGLE_APPLICATION_CREDENTIALS /secret/service-account.json
 ENTRYPOINT ["/gitbeaver", "workdir=/workdir", "main=run"]

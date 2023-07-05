@@ -1,8 +1,4 @@
 IF NOT runTag THEN SET runTag main
-STEP START Cloning ${runRepo}:${runTag}
-   IF runRepoProject THEN GCLOUD CLONE BRANCH ${runTag} OF SOURCE REPO ${runRepo} IN PROJECT ${runRepoProject}
-   IF NOT repoProject THEN GIT CLONE ${runGit} ${runRepo} ${runTag}
-STEP END
-
+IF runRepoProject EXECUTE cloneSourceRepo ELSE cloneGit
 LOG Executing beaver script ${runScript} in ${runRepo}
 EXECUTE ${runRepo}/${runScript} IN ${runRepo}

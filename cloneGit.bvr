@@ -1,0 +1,4 @@
+# clone using git client
+STEP START Cloning git repo ${runGit}/${runRepo}:${runTag}
+   GIT CLONE ${runGit} ${runRepo} ${runTag}
+STEP END

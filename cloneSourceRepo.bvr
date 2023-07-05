@@ -1,0 +1,4 @@
+# clone using gcloud utility
+STEP START Cloning gcloud source repo ${runRepo}:${runTag} in project ${runRepoProject}
+   GCLOUD CLONE BRANCH ${runTag} OF SOURCE REPO ${runRepo} IN PROJECT ${runRepoProject}
+STEP END
