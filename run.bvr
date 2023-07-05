@@ -1,5 +1,6 @@
 STEP START Cloning ${runGit}/${runRepo}:${runTag}
-   GIT CLONE ${runGit} ${runRepo} ${runTag}
+   IF repoProject THEN GCLOUD CLONE SOURCE REPO ${runRepo} IN PROJECT ${repoProject}
+   IF NOT repoProject THEN GIT CLONE ${runGit} ${runRepo} ${runTag}
 STEP END
 
 STEP START Ececuting beaver script ${runScript} in ${runRepo}
