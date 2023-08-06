@@ -33,7 +33,7 @@ hexagon CloudBuild #greenyellow
 (gitbeaver/core)<-[#red]l-(git-beaver) : runs
 (git-beaver-gcp)-[#green]->(CloudBuild) : terraforms
 (gitbeaver/release)--|>(tagged image)
-(git-beaver-gcp) -[#blue]-> (tagged image) : builds
+(git-beaver-gcp) -[#blue]-> (tagged image) : tags
 (tagged image) <-[#red] (CloudBuild) : runs
 
 @enduml
