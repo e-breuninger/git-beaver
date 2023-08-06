@@ -12,11 +12,17 @@ Plugins are frozen after the list has been processed, this prevents other beaver
 # Context
 
 The following chart shows relations between the various git repositories (rectangles) and docker image (ellipses) that are
-used to create and operate the central git-beaver cloud run service (hexagon). 
-
-![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver-gcp/main/overview.puml)
+used to create and operate the cloud build service for provisioning (hexagon). 
 
 ![build diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/puml/build.puml)
+
+The following chart illustrates how the generated tagged docker image (blue) can be provisioned inside an eco-system
+of GCP services. It is used by a cloud build process (red) which triggered on changes to source repositories via pubsub.
+All components of the eco system for the provisioning service live inside a dedicated provisioning project (dark green).
+
+The provisioning machinery can then be used to porivision various central components (yellow) and allow data mesh participant 
+teams to configure their individual resources (light green): 
+
 ![provisioning diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/puml/provisioning.puml)
 
 # Documentation
