@@ -1,0 +1,39 @@
+@startuml
+frame CoreProvisioning {
+(Provisioning Project) #darkseagreen
+(Docker Image) #lightskyblue
+(Provisioning Service) #salmon
+(Provisioning Project) -> (Remote TF state bucket)
+(Provisioning Project) --> (Provisioning Service Accounts)
+(Provisioning Project) ---> (PubSub Topic)
+(Provisioning Project) --> (Docker Image)
+(Docker Image) --> (Provisioning Service)
+(PubSub Topic) -> (Git Repositories)
+(Provisioning Service Accounts) --> (Git Repositories)
+(Provisioning Service Accounts) --> (Provisioning Service)
+(PubSub Topic) --> (Provisioning Service)
+(Git Repositories) -> (Provisioning Service)
+}
+frame CentralConfiguration {
+(Folder Structure) #lemonchiffon
+(Projects) #lemonchiffon
+(Roles) #lemonchiffon
+(BQ Commitments) #lemonchiffon
+(BQ Reservations) #lemonchiffon
+(Provisioning Service) --> (Folder Structure)
+(Folder Structure)-->(Projects)
+(Projects)-->(BQ Commitments)
+(Projects)-->(BQ Reservations)
+(Provisioning Service) --> (Roles)
+}
+frame TeamConfiguration {
+(Managed Resources) #aquamarine
+(Team Service Accounts) #aquamarine
+(Role Bindings) #aquamarine
+(Provisioning Service) --> (Team Service Accounts)
+(Provisioning Service) --> (Managed Resources)
+(Team Service Accounts) --> (Role Bindings)
+(Managed Resources) --> (Role Bindings)
+(Roles) --> (Role Bindings)
+}
+@enduml
