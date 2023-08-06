@@ -16,6 +16,9 @@ used to create and operate the central git-beaver cloud run service (hexagon).
 
 ![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver-gcp/main/overview.puml)
 
+![build diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/puml/build.puml)
+![provisioning diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/e-breuninger/git-beaver/main/puml/provisioning.puml)
+
 # Documentation
 
 All integrated plugins and available commands are listed in [this automatically created documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/e-breuninger/git-beaver/main/doc/autocreated/index.html).
