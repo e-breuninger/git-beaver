@@ -54,22 +54,23 @@ body {
 </head>
 <body>
 
-<h1 id="myheader">ExecuteCommand</h1>
+<h1 id="myheader">SetSubstitutingCommand</h1>
 <h2>Purpose</h2>
-Execute a script with a cloned set of variables (variable changes are not visible after return)
+Set a variable to a value after applying a regex substitution
 <h2>Variants</h2>
 <table id="mytable1">
 <tr><th>Usage</th><th>Description</th></tr>
-  <tr><td>EXECUTE script</td><td>execute a script within the current workspace</td></tr>
-  <tr><td>EXECUTE script IN folder</td><td>execute a script (located in the current workspace) within a sub-workspace</td></tr>
+  <tr><td>SET variable SUBSTITUTING regex BY substitute IN *</td><td>Set a variable to a value after applying a regex substitution</td></tr>
 </table>
 
 <h2>Arguments</h2>
 
 <table id="mytable2">
 <tr><th>Argument</th><th>Value</th></tr>
-  <tr><td>script</td><td>the script to be executed (relatve path in current workspace)</td></tr>
-  <tr><td>folder</td><td>the folder (relatve path in current workspace) to be used as execution workspace of the script</td></tr>
+  <tr><td>variable</td><td>name of the variable to be set</td></tr>
+  <tr><td>regex</td><td>regular expression to be replaced</td></tr>
+  <tr><td>substitute</td><td>string to be prelaces found places with</td></tr>
+  <tr><td>*</td><td>input string</td></tr>
 </table>
 <h2>Plugin</h2>
 This command is defined in <a href="BasePlugin.html">BasePlugin</a>

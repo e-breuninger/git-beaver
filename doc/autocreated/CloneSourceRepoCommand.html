@@ -54,25 +54,26 @@ body {
 </head>
 <body>
 
-<h1 id="myheader">ExecuteCommand</h1>
+<h1 id="myheader">CloneSourceRepoCommand</h1>
 <h2>Purpose</h2>
-Execute a script with a cloned set of variables (variable changes are not visible after return)
+clone a gcloud source repo
 <h2>Variants</h2>
 <table id="mytable1">
 <tr><th>Usage</th><th>Description</th></tr>
-  <tr><td>EXECUTE script</td><td>execute a script within the current workspace</td></tr>
-  <tr><td>EXECUTE script IN folder</td><td>execute a script (located in the current workspace) within a sub-workspace</td></tr>
+  <tr><td>GCLOUD CLONE BRANCH branch OF SOURCE REPO repo IN PROJECT project</td><td>clone a specific branch of a source repo</td></tr>
+  <tr><td>GCLOUD CLONE SOURCE REPO repo IN PROJECT project</td><td>clone main branch of a source repo</td></tr>
 </table>
 
 <h2>Arguments</h2>
 
 <table id="mytable2">
 <tr><th>Argument</th><th>Value</th></tr>
-  <tr><td>script</td><td>the script to be executed (relatve path in current workspace)</td></tr>
-  <tr><td>folder</td><td>the folder (relatve path in current workspace) to be used as execution workspace of the script</td></tr>
+  <tr><td>project</td><td>the gcp project in which the repository is located</td></tr>
+  <tr><td>repo</td><td>the name of the gcp source reopsitory</td></tr>
+  <tr><td>branch</td><td>the branch to be checked out</td></tr>
 </table>
 <h2>Plugin</h2>
-This command is defined in <a href="BasePlugin.html">BasePlugin</a>
+This command is defined in <a href="GcloudPlugin.html">GcloudPlugin</a>
 </body>
 </html>
 
