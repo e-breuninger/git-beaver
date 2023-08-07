@@ -25,3 +25,12 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Push docker image to docker.io
       run: docker push gitbeaver/release:latest
+    - name: Make docu
+      run: sh doc/createDocumentation.sh
+    - name: Add docu
+      run: git add doc
+    - name: Commit docu
+      run: git commit -m "Updated docu"
+    - name: Git push
+      run: git push
+  
