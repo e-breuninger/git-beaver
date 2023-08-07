@@ -29,6 +29,10 @@ jobs:
       run: sh doc/createDocumentation.sh
     - name: Add docu
       run: git add doc
+    - name: Set user name
+      run: git config user.name "Documentation update"
+    - name: Set user email
+      run: git config user.email "git-beaver@jkube.org"
     - name: Commit docu
       run: git commit -m "Updated docu"
     - name: Git push
