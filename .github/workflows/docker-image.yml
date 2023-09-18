@@ -34,7 +34,7 @@ jobs:
     - name: Set user email
       run: git config user.email "git-beaver@jkube.org"
     - name: Commit docu
-      run: git commit -m "Updated docu"
+      run: git commit --allow-empty -m "Updated docu"
     - name: Git push
       run: git push
   
