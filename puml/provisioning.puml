@@ -4,36 +4,40 @@ frame CoreProvisioning {
 (Docker Image) #lightskyblue
 (Provisioning Service) #salmon
 (Provisioning Project) -> (Remote TF state bucket)
-(Provisioning Project) --> (Provisioning Service Accounts)
+(Provisioning Project) --> (Core Service Accounts)
 (Provisioning Project) ---> (PubSub Topic)
 (Provisioning Project) --> (Docker Image)
 (Docker Image) --> (Provisioning Service)
 (PubSub Topic) -> (Git Repositories)
-(Provisioning Service Accounts) --> (Git Repositories)
-(Provisioning Service Accounts) --> (Provisioning Service)
+(Core Service Accounts) --> (Git Repositories)
+(Core Service Accounts) --> (Provisioning Service)
 (PubSub Topic) --> (Provisioning Service)
 (Git Repositories) -> (Provisioning Service)
 }
 frame CentralConfiguration {
 (Folder Structure) #lemonchiffon
 (Projects) #lemonchiffon
-(Roles) #lemonchiffon
+(Organization IAM) #lemonchiffon
+(Custom Roles) #lemonchiffon
+(Provisioning Service Accounts) #lemonchiffon
 (BQ Commitments) #lemonchiffon
 (BQ Reservations) #lemonchiffon
-(Provisioning Service) --> (Folder Structure)
+(Provisioning Service Accounts) --> (Folder Structure)
 (Folder Structure)-->(Projects)
 (Projects)-->(BQ Commitments)
 (Projects)-->(BQ Reservations)
-(Provisioning Service) --> (Roles)
+(Provisioning Service) --> (Provisioning Service Accounts)
+(Provisioning Service Accounts) --> (Custom Roles)
+(Custom Roles) --> (Organization IAM)
 }
 frame TeamConfiguration {
 (Managed Resources) #aquamarine
 (Team Service Accounts) #aquamarine
 (Role Bindings) #aquamarine
-(Provisioning Service) --> (Team Service Accounts)
-(Provisioning Service) --> (Managed Resources)
+(Provisioning Service) --> TeamConfiguration
+(Provisioning Service Accounts) --> TeamConfiguration
 (Team Service Accounts) --> (Role Bindings)
 (Managed Resources) --> (Role Bindings)
-(Roles) --> (Role Bindings)
+(Custom Roles) --> (Role Bindings)
 }
 @enduml
