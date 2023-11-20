@@ -38,3 +38,7 @@
 	path = pubsub
 	url = https://github.com/g-bvr/pubsub
 	branch = main
+[submodule "markdown"]
+	path = markdown
+	url = https://github.com/g-bvr/markdown
+	branch = main
