@@ -1,0 +1,40 @@
+[submodule "security"]
+	path = security
+	url = https://github.com/g-bvr/security
+	branch = main
+[submodule "core"]
+	path = core
+	url = https://github.com/g-bvr/core
+	branch = main
+[submodule "base"]
+	path = base
+	url = https://github.com/g-bvr/base
+	branch = main
+[submodule "file-resolver"]
+	path = file-resolver
+	url = https://github.com/g-bvr/file-resolver
+	branch = main
+[submodule "html-logger"]
+	path = html-logger
+	url = https://github.com/g-bvr/html-logger
+	branch = main
+[submodule "web-server"]
+	path = web-server
+	url = https://github.com/g-bvr/web-server
+	branch = main
+[submodule "yaml"]
+	path = yaml
+	url = https://github.com/g-bvr/yaml
+	branch = main
+[submodule "terraform"]
+	path = terraform
+	url = https://github.com/g-bvr/terraform
+	branch = main
+[submodule "gcloud"]
+	path = gcloud
+	url = https://github.com/g-bvr/gcloud
+	branch = main
+[submodule "pubsub"]
+	path = pubsub
+	url = https://github.com/g-bvr/pubsub
+	branch = main
