@@ -29,7 +29,6 @@ teams to configure their individual resources (light green):
 
 All integrated plugins and available commands are listed in [this automatically created documentation](https://htmlpreview.github.io/?https://raw.githubusercontent.com/e-breuninger/git-beaver/main/doc/autocreated/index.html).
 
-
 ## Links
 
 ### Git Repositories
