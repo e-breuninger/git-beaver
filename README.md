@@ -40,3 +40,5 @@ All integrated plugins and available commands are listed in [this automatically 
 ### Docker Images
 * Used base docker image: https://hub.docker.com/r/gitbeaver/core/tags
 * Created docker image: https://hub.docker.com/r/gitbeaver/release/tags
+
+
