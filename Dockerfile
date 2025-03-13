@@ -5,6 +5,5 @@ RUN /gitbeaver workdir=/workdir main=setup && \
     cp /workdir/plugins.txt / && \
     rm -rf /workdir
 COPY run.bvr cloneGit.bvr cloneSourceRepo.bvr /workdir/
-#TODO this can go, just for develop
-#ENV GOOGLE_APPLICATION_CREDENTIALS /secret/service-account.json
+COPY git/.gitconfig ~/.gitconfig
 ENTRYPOINT ["/gitbeaver", "workdir=/workdir", "main=run"]
