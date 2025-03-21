@@ -30,15 +30,21 @@ jobs:
     - name: Push docker image to docker.io
       run: docker push gitbeaver/release:${{ steps.get_version.outputs.VERSION }}
     - name: Make docu
+      if: startsWith(github.ref, 'refs/heads/')
       run: sh doc/createDocumentation.sh
     - name: Add docu
+      if: startsWith(github.ref, 'refs/heads/')
       run: git add doc
     - name: Set user name
+      if: startsWith(github.ref, 'refs/heads/')
       run: git config user.name "Documentation update"
     - name: Set user email
+      if: startsWith(github.ref, 'refs/heads/')
       run: git config user.email "git-beaver@jkube.org"
     - name: Commit docu
+      if: startsWith(github.ref, 'refs/heads/')
       run: git commit --allow-empty -m "Updated docu"
     - name: Git push
+      if: startsWith(github.ref, 'refs/heads/')
       run: git push
   
