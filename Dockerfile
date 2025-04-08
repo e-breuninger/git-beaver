@@ -5,5 +5,4 @@ RUN /gitbeaver workdir=/workdir main=setup && \
     cp /workdir/plugins.txt / && \
     rm -rf /workdir
 COPY run.bvr cloneGit.bvr cloneSourceRepo.bvr /workdir/
-COPY git/.gitconfig /root/.gitconfig
 ENTRYPOINT ["/gitbeaver", "workdir=/workdir", "main=run"]

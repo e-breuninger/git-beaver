@@ -1,3 +1,0 @@
-[credential "https://gitlab.breuni.de"]
-    username = oauth2
-    helper = "!f() { echo "username=oauth2"; echo "password=$GITLAB_TOKEN"; };f"
