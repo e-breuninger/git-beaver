@@ -3,6 +3,7 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
+    tags: [ "*" ]
   pull_request:
     branches: [ "main" ]
 
@@ -16,25 +17,34 @@ jobs:
     - uses: actions/checkout@v3
     - name: Show Java Version
       run: java -version
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag gitbeaver/release:0.2.2
+      run: docker build . --file Dockerfile --tag gitbeaver/release:${{ steps.get_version.outputs.VERSION }}
     - name: Login to Docker Hub
       uses: docker/login-action@v2
       with:
         username: gitbeaver
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Push docker image to docker.io
-      run: docker push gitbeaver/release:0.2.2
+      run: docker push gitbeaver/release:${{ steps.get_version.outputs.VERSION }}
     - name: Make docu
+      if: startsWith(github.ref, 'refs/heads/')
       run: sh doc/createDocumentation.sh
     - name: Add docu
+      if: startsWith(github.ref, 'refs/heads/')
       run: git add doc
     - name: Set user name
+      if: startsWith(github.ref, 'refs/heads/')
       run: git config user.name "Documentation update"
     - name: Set user email
+      if: startsWith(github.ref, 'refs/heads/')
       run: git config user.email "git-beaver@jkube.org"
     - name: Commit docu
+      if: startsWith(github.ref, 'refs/heads/')
       run: git commit --allow-empty -m "Updated docu"
     - name: Git push
+      if: startsWith(github.ref, 'refs/heads/')
       run: git push
   
