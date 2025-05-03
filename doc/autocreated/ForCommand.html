@@ -68,6 +68,7 @@ Execute a command for multiple items
   <tr><td>FOR FOLDER foldervar IN folder *</td><td>Execute the command for all subfolders of specified folder</td></tr>
   <tr><td>FOR SUBFOLDER subfoldervar IN folder *</td><td>Execute the command for all subfolders of specified folder</td></tr>
   <tr><td>FOR LINE linevar IN file *</td><td>Execute the command for all lines of specified text file</td></tr>
+  <tr><td>FOR SUBSTRING substringvar IN stringvalue SPLIT ON separator *</td><td>Execute the command for all comma separated pieces of specified string</td></tr>
 </table>
 
 <h2>Arguments</h2>
@@ -81,6 +82,9 @@ Execute a command for multiple items
   <tr><td>file</td><td>the file from which lines shall be read</td></tr>
   <tr><td>folder</td><td>the folder in which files/subfolders shall be listed</td></tr>
   <tr><td>pattern</td><td>a regex expression by which the found items are filtered, the wildcard character # is resolved to [0-9]+ i.e. matches numbers</td></tr>
+  <tr><td>substringvar</td><td>the loop variable holding the current substring</td></tr>
+  <tr><td>stringvalue</td><td>the string value that shall be split into substrings to loop over</td></tr>
+  <tr><td>separator</td><td>the string value that will serve as separator in splitting (e.g. ',')</td></tr>
   <tr><td>*</td><td>can be either 'DO script' to execute a script or any other command</td></tr>
 </table>
 <h2>Plugin</h2>
