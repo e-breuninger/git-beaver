@@ -1,4 +1,4 @@
-FROM gitbeaver/core:0.2.5
+FROM gitbeaver/core:0.2.6
 RUN mkdir /workdir
 COPY setup.bvr plugins.md install-plugin.bvr /workdir/
 RUN /gitbeaver workdir=/workdir main=setup && \
