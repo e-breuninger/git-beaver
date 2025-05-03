@@ -31,7 +31,7 @@ jobs:
       run: docker push gitbeaver/release:${{ steps.get_version.outputs.VERSION }}
     - name: Make docu
       if: startsWith(github.ref, 'refs/heads/')
-      run: sh doc/createDocumentation.sh
+      run: sh doc/createDocumentation.sh ${{ steps.get_version.outputs.VERSION }}
     - name: Add docu
       if: startsWith(github.ref, 'refs/heads/')
       run: git add doc
